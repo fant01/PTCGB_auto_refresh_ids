@@ -46,9 +46,9 @@ This repository contains three files designed to manage and refresh a shared ID 
 1. **Upload the Excel file**: `Shared ID List_template.xlsx` should be uploaded to Google Drive.
 2. **Deploy Google Apps Script**:
    - Upload and configure `google_script.js` within Google Sheets or Google Apps Script editor.
-   - Insert the reference to the Google Drive ID in the source of google\_script.js of the uploaded Excel document.
+   - Insert the reference to the Google Sheet file ID in the source of google\_script.js.
 3. **Run the batch script**:
-   - Execute `id_refresher.bat`, specifying the URL where the Google Script is exposed.
+   - Execute `id_refresher.bat`, specifying the URL where the Google Script is exposed to send a cURL.
 
 ## Requirements
 
