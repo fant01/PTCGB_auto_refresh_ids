@@ -118,21 +118,21 @@ rem Print another separator line
 echo ===================
 
 rem Print a separator line
-echo =================
-echo --Online--List--
-echo =================
+echo ======================
+echo -----Online--List-----
+echo ======================
 
 rem Print the content of the file ids.txt
 type "%DEST_DISCORD_NAMES_TEMP%"
 
 rem Print another separator line
-echo -----------------
+echo ----------------------
 
 rem Print the content of the file ids.txt
 type "%DEST_DISCORD_TOTALINSTANCES_TEMP%"
 
 rem Print another separator line
-echo =================
+echo ======================
 
 rem Delete the temporary file
 del "%DEST_TEMP%"

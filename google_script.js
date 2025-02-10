@@ -1,7 +1,7 @@
 function doGet() {
 
   // Open the spreadsheet by ID
-  var spreadsheetId = 'PASTE_YOUR_SPEADSHEET_ID_HERE';
+  var spreadsheetId = 'PASTE_YOUR_SPREADSHEET_ID_HERE';
   var sheet = SpreadsheetApp.openById(spreadsheetId).getSheetByName('Sheet1'); // Change if necessary
 
   // Get the data range
@@ -51,12 +51,8 @@ function doGet() {
   // Log the instances list for debugging
   Logger.log("instancesList: " + JSON.stringify(instancesList));
 
-  let totalInstances = 0;
-  instancesList.forEach(num => {
-    if (num != "") {
-      totalInstances += num;
-    }
-  });
+  // Get the total instances value from the spreadsheet (cell F2)
+  var totalInstances = sheet.getRange(2, 6).getValue();
 
   // Log the total instances for debugging
   Logger.log("totalInstances: " + totalInstances);
